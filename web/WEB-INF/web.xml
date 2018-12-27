@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app metadata-complete="true" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <context-param>
+        <param-name>nombreTienda</param-name>
+        <param-value>Fruteria Online 2018/19</param-value>
+    </context-param>
+    <servlet-mapping>
+        <servlet-name>generaPdf</servlet-name>
+        <url-pattern>/generaPdf</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <!--  
+	
+	
+	 
+	<session-config>         
+	<session-timeout>10</session-timeout> 
+	</session-config>
+		
+	<servlet>
+		<servlet-name>Desconexion</servlet-name>
+		<servlet-class>isClases.Desconexion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Desconexion</servlet-name>
+		<url-pattern>/Desconexion</url-pattern>
+	</servlet-mapping>
+	
+	-->
+    <servlet>
+        <servlet-name>addArticulo</servlet-name>
+        <servlet-class>addArticulo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>generaPdf</servlet-name>
+        <servlet-class>generaPdf</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addArticulo</servlet-name>
+        <url-pattern>/addArticulo</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>devolucionArticulos</servlet-name>
+        <servlet-class>devolucionArticulos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>devolucionArticulos</servlet-name>
+        <url-pattern>/devolucionArticulos</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>modificaArticulosCesta</servlet-name>
+        <servlet-class>modificaArticulosCesta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>modificaArticulosCesta</servlet-name>
+        <url-pattern>/modificaArticulosCesta</url-pattern>
+    </servlet-mapping>
+</web-app>
