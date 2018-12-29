@@ -37,6 +37,7 @@
 			</table>
                         
                         <jsp:include page="/generaPdf"/>
+                        <jsp:include page="/enviameUnCorreo"/>
                         <h1>Se ha generado la facturita en c:/documento.pdf</h1>
                       
 			</c:when>

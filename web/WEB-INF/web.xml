@@ -4,9 +4,17 @@
         <param-name>nombreTienda</param-name>
         <param-value>Fruteria Online 2018/19</param-value>
     </context-param>
+    <servlet>
+        <servlet-name>enviameUnCorreo</servlet-name>
+        <servlet-class>enviameUnCorreo</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>generaPdf</servlet-name>
         <url-pattern>/generaPdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>enviameUnCorreo</servlet-name>
+        <url-pattern>/enviameUnCorreo</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
